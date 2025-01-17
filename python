@@ -1,0 +1,30 @@
+""" You are given an input string that contains alphanumeric characters. The task is to extract the numeric digits from the input string, count the occurrences of lowercase letters and count the occurrences of uppercase letters.
+
+Input format :
+The input consists of a single line containing the input string.
+
+Output format :
+The first line of output displays the numerical value extracted from the input string.
+
+The second line displays the count of lowercase letters (a–z) present in the string.
+
+The third line displays the count of uppercase letters (A–Z) present in the string."""
+
+inp_str = input()
+num = ""
+count1 = 0
+count2 = 0
+
+for c in inp_str:
+    if c.isdigit():
+        num = num + c
+
+    if c.islower():
+        count1 = count1 + 1
+
+    elif c.isupper():
+        count2 = count2 + 1
+
+print(num)
+print(count1)
+print(count2)
